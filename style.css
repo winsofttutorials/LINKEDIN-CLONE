@@ -10,6 +10,7 @@
   --bg-color: #f0f2f5;
   --primary-bg: #fff;
   --font-color: #5f5f5f;
+  --list-color: #00000099;
   --online-color: #045be6;
   --hover-color: rgba(0, 0, 0, 0.9);
 }
@@ -45,11 +46,11 @@ a {
 }
 
 .nav-bar-left .searchbar {
-  width: 300px;
+  width: 250px;
   display: flex;
   align-items: center;
   background: #eef3f8;
-  border-radius: 10px;
+  border-radius: 8px;
   margin-left: 10px;
   transition: width 0.3s;
   border: 2px solid transparent;
@@ -76,28 +77,37 @@ a {
 
 .nav-bar-center {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   flex: 1;
+  border-right: 1px solid var(--hover-color);
+
+  /* background: red; */
 }
 
 .nav-bar-center ul {
-  list-style-type: none;
+  list-style: none;
+  width: 90%;
+  text-align: center;
 }
 
 .nav-bar-center ul li {
   display: inline-block;
   align-items: center;
-  padding: 0px 20px;
-  margin-left: 6px;
+  width: 18%;
+
   text-align: center;
   position: relative;
   transition: width 0.5s;
+  /* align-items: flex-start; */
 }
 
 .nav-bar-center ul li a {
   align-items: center;
   text-decoration: none;
-  color: var(--font-color);
+  color: var(--list-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-size: 12px;
 }
 
 .nav-bar-center ul li a span {
@@ -107,7 +117,7 @@ a {
 }
 
 .nav-bar-center ul li a img {
-  width: 30px;
+  width: 40px;
   margin-bottom: -5px;
 }
 
@@ -116,7 +126,7 @@ a {
   height: 2px;
   width: 0;
   background: var(--font-color);
-  bottom: -12px;
+  bottom: -9px;
   left: 0;
   position: absolute;
 }
@@ -125,7 +135,7 @@ a {
 }
 
 .user-profile-pic {
-  width: 30px;
+  width: 35px;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -139,15 +149,50 @@ a {
   margin-left: 8px;
   align-items: center;
   cursor: pointer;
+  background: #fff;
+  margin-right: 40px;
 }
 
 .user-pic div {
   display: flex;
   align-items: center;
+  color: var(--list-color);
 }
 
-/* .nav-bar-center ul .active-links a:hover,
+.nav-bar-center ul .active-links a:hover,
 .user-pic div:hover {
-  color: var(--hover-color);
-} */
+  color: var(--font-color);
+}
+
+.nav-bar-right {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.lhs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.nav-bar-right .gridicon {
+  width: 25px;
+  margin-bottom: 8px;
+}
+
+.work {
+  display: flex;
+  align-items: center;
+  color: var(--list-color);
+}
+
+.premium {
+  text-align: center;
+  margin-left: 10px;
+  color: var(--list-color);
+  text-decoration: underline;
+}
 /* ---------------------NAV-BAR-END--------------------------- */

@@ -4,3 +4,17 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+:root {
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  --bg-color: #f0f2f5;
+  --primary-bg: #fff;
+  --font-color: #5f5f5f;
+  --online-color: #045be6;
+  --hover-color: rgba(0, 0, 0, 0.9);
+}
+
+body {
+  background: var(--bg-color);
+  min-height: 100vh;
+}

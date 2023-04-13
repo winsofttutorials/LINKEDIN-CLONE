@@ -7,5 +7,76 @@
     <title>Linkedin-clone- winsofttutorials</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- --------------------NAV-BAR START------------------ -->
+    <nav>
+      <div class="nav-bar-left">
+        <a href="index.html"><img src="images/logo.png" class="logo" /></a>
+        <div class="searchbar" id="search-bar">
+          <img src="images/search.png" />
+          <input
+            type="text"
+            placeholder="Search"
+            id="input-id"
+            onclick="fullLength()"
+          />
+        </div>
+      </div>
+      <!-- ---------------CENTER-NAV-BAR------------------------- -->
+      <div class="nav-bar-center">
+        <ul>
+          <li class="active-links activelink" onclick="openTab()">
+            <a href=""><img src="images/home.png" /><span>Home</span></a>
+          </li>
+          <li onclick="openTab()">
+            <a href=""><img src="images/network.png" /><span>Network</span></a>
+          </li>
+          <li onclick="openTab(name)">
+            <a href=""><img src="images/jobs.png" /><span>Jobs</span></a>
+          </li>
+          <li onclick="openTab()">
+            <a href=""
+              ><img src="images/message.png" /><span>Messaging</span></a
+            >
+          </li>
+          <li onclick="openTab()">
+            <a href=""
+              ><img src="images/notification.png" /><span
+                >Notifications</span
+              ></a
+            >
+          </li>
+        </ul>
+        <div class="user-pic">
+          <img src="images/img-4.jfif" class="user-profile-pic" />
+          <div>
+            <p>Me</p>
+            <img src="images/down-arrow.png" class="down-arrow" />
+          </div>
+        </div>
+      </div>
+      <!-- -------------------RIGHT-NAV-BAR------------------------ -->
+      <div class="nav-bar-right">
+        <a href="#">Try premium for free</a>
+      </div>
+    </nav>
+
+    <script>
+      let searchId = document.getElementById("search-bar");
+      let inputId = document.getElementById("input-id");
+
+      function fullLength() {
+        searchId.classList.toggle("fullWidth");
+      }
+
+      let tablinks = document.getElementsByTagName("li");
+
+      function openTab() {
+        for (const tablink of tablinks) {
+          tablink.classList.remove("activelink");
+        }
+        event.currentTarget.classList.add("activelink");
+      }
+    </script>
+  </body>
 </html>

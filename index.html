@@ -6,8 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Linkedin-clone- winsofttutorials</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/615bcdb6c2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <div class="post-area-cover" id="openTextArea">
+      <div class="postArea-wrap">
+        <div class="post-area">
+          <div class="write-post">
+            <div class="top-section-post">
+              <img src="images/img-4.jfif" />
+              <div>
+                <h1>W.IFIDI, EPHOD <img src="images/down-arrow.png" /></h1>
+                <small>Post to anyone</small>
+              </div>
+            </div>
+            <i class="fa-solid fa-xmark closeBtn"></i>
+          </div>
+          <textarea
+            rows="16"
+            placeholder="What do you want to talk about?"
+          ></textarea>
+          <div class="post-link-icons">
+            <img src="images/photo.png" />
+            <img src="images/video.png" />
+            <img src="images/event.png" />
+            &middot; &middot; &middot;
+          </div>
+          <hr />
+          <div class="post-time">
+            <i class="fa-regular fa-clock"></i>
+            <span>post</span>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- --------------------NAV-BAR START------------------ -->
     <nav>
       <div class="nav-bar-left">
@@ -119,6 +154,292 @@
           <a href="#">Yes</a>
           <a href="#">No</a>
         </div>
+        <div class="post-section-frame">
+          <div class="user-post-section">
+            <div class="write-post">
+              <img src="images/img-4.jfif" />
+              <input
+                type="text"
+                placeholder="Start a post"
+                onclick="openText()"
+              />
+            </div>
+            <div class="post-links">
+              <li><img src="images/photo.png" />Photo</li>
+              <li><img src="images/video.png" />Video</li>
+              <li><img src="images/event.png" />Event</li>
+              <li><img src="images/article.png" />Write article</li>
+            </div>
+          </div>
+          <div class="sortbytop">
+            <hr />
+            <p>
+              sort by: <span>Top <img src="images/down-arrow.png" /></span>
+            </p>
+          </div>
+          <div class="post-section">
+            <div class="post">
+              <div class="post-top">
+                <div class="user-post-pic">
+                  <div>
+                    <img src="images/user-1.png" />
+                    <p>Guillermo James <span>Likes this</span></p>
+                  </div>
+                  <div>&middot;&middot;&middot;</div>
+                </div>
+                <hr />
+              </div>
+              <div class="post-user-profile-details">
+                <div class="post-profile-details">
+                  <img src="images/user-2.png" />
+                  <div>
+                    <h2>Jane Marz &middot; <b>3rd+</b></h2>
+                    <small
+                      >UI/UX Designer Content Creator/ Co-founder of Atheros /
+                      Design Lead</small
+                    >
+                    <small
+                      >1d &middot; <i class="fa-solid fa-earth-americas"></i
+                    ></small>
+                  </div>
+                </div>
+                <a href="#" class="post-follow">+ FOLLOW</a>
+              </div>
+              <p class="user-post">
+                Icons are more than just pretty pictures in UI/UX design -
+                they're powerful communication tools that can help users
+                navigate your interface with ease.
+              </p>
+              <p class="more">...See more</p>
+            </div>
+            <img src="images/post-image-1.png" width="100%" />
+            <div class="likes-activity">
+              <div>
+                <img src="images/likes.svg" />
+                <img src="images/likes&share.svg" />
+                <img src="images/claps.svg" />
+                <p>Guillermo James and 417 others</p>
+              </div>
+              <div>
+                <p>12 Comments &middot; 30 reposts</p>
+              </div>
+              <hr class="divider" />
+            </div>
+            <div class="post-user-activity">
+              <div class="post-activity-links">
+                <img src="images/like.png" />
+                <p>Like</p>
+              </div>
+              <div class="post-activity-links">
+                <img src="images/comment.png" />
+                <p>Comment</p>
+              </div>
+              <div class="post-activity-links">
+                <img src="images/share.png" />
+                <p>Repost</p>
+              </div>
+              <div class="post-activity-links">
+                <img src="images/send.png" />
+                <p>Send</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-section">
+            <div class="post">
+              <div class="post-top">
+                <div class="user-post-pic">
+                  <div>
+                    <img src="images/img-12.jfif" />
+                    <p>Guillermo James <span>Likes this</span></p>
+                  </div>
+                  <div>&middot;&middot;&middot;</div>
+                </div>
+                <hr />
+              </div>
+              <div class="post-user-profile-details">
+                <div class="post-profile-details">
+                  <img src="images/user-4.png" />
+                  <div>
+                    <h2>Jane Marz &middot; <b>3rd+</b></h2>
+                    <small
+                      >UI/UX Designer Content Creator/ Co-founder of Atheros /
+                      Design Lead</small
+                    >
+                    <small
+                      >1d &middot; <i class="fa-solid fa-earth-americas"></i
+                    ></small>
+                  </div>
+                </div>
+                <a href="#" class="post-follow">+ FOLLOW</a>
+              </div>
+              <p class="user-post">
+                Icons are more than just pretty pictures in UI/UX design -
+                they're powerful communication tools that can help users
+                navigate your interface with ease.
+              </p>
+              <p class="more">...See more</p>
+            </div>
+            <img src="images/post-image-2.png" width="100%" />
+            <div class="likes-activity">
+              <div>
+                <img src="images/likes.svg" />
+                <img src="images/likes&share.svg" />
+                <img src="images/claps.svg" />
+                <p>Guillermo James and 417 others</p>
+              </div>
+              <div>
+                <p>12 Comments &middot; 30 reposts</p>
+              </div>
+              <hr class="divider" />
+            </div>
+            <div class="post-user-activity">
+              <div class="post-activity-links">
+                <img src="images/like.png" />
+                <p>Like</p>
+              </div>
+              <div class="post-activity-links">
+                <img src="images/comment.png" />
+                <p>Comment</p>
+              </div>
+              <div class="post-activity-links">
+                <img src="images/share.png" />
+                <p>Repost</p>
+              </div>
+              <div class="post-activity-links">
+                <img src="images/send.png" />
+                <p>Send</p>
+              </div>
+            </div>
+          </div>
+          <div class="post-section">
+            <div class="post">
+              <div class="post-top">
+                <div class="user-post-pic">
+                  <div>
+                    <img src="images/img-12.jfif" />
+                    <p>Guillermo James <span>Likes this</span></p>
+                  </div>
+                  <div>&middot;&middot;&middot;</div>
+                </div>
+                <hr />
+              </div>
+              <div class="post-user-profile-details">
+                <div class="post-profile-details">
+                  <img src="images/img-20.jfif" />
+                  <div>
+                    <h2>Jane Marz &middot; <b>3rd+</b></h2>
+                    <small
+                      >UI/UX Designer Content Creator/ Co-founder of Atheros /
+                      Design Lead</small
+                    >
+                    <small
+                      >1d &middot; <i class="fa-solid fa-earth-americas"></i
+                    ></small>
+                  </div>
+                </div>
+                <a href="#" class="post-follow">+ FOLLOW</a>
+              </div>
+              <p class="user-post">
+                Icons are more than just pretty pictures in UI/UX design -
+                they're powerful communication tools that can help users
+                navigate your interface with ease.
+              </p>
+              <p class="more">...See more</p>
+            </div>
+            <img src="images/post-image-3.png" width="100%" />
+            <div class="likes-activity">
+              <div>
+                <img src="images/likes.svg" />
+                <img src="images/likes&share.svg" />
+                <img src="images/claps.svg" />
+                <p>Guillermo James and 417 others</p>
+              </div>
+              <div>
+                <p class="firstCom">12 Comments &middot; 30 reposts</p>
+              </div>
+              <hr class="divider" />
+            </div>
+            <div class="post-user-activity">
+              <div class="post-activity-links">
+                <img src="images/like.png" />
+                <p>Like</p>
+              </div>
+              <div class="post-activity-links">
+                <img src="images/comment.png" />
+                <p>Comment</p>
+              </div>
+              <div class="post-activity-links">
+                <img src="images/share.png" />
+                <p>Repost</p>
+              </div>
+              <div class="post-activity-links">
+                <img src="images/send.png" />
+                <p>Send</p>
+              </div>
+            </div>
+          </div>
+          <div class="post-section">
+            <div class="post-recommed-frame">
+              <div class="top-recommend">
+                <p>Recommended for you</p>
+                <div>&middot;&middot;&middot;</div>
+              </div>
+              <div class="mid-recommendations">
+                <div class="mid-recommendations-top">
+                  <img src="images/mycare.jfif" />
+                  <div>
+                    <p>MyCareermatters Outsourcing & Allied Services LTD</p>
+                    <small>Company &middot; Human Resources</small>
+                    <small
+                      >People who are in the financial Services industry also
+                      follow these pages</small
+                    >
+                  </div>
+                </div>
+                <a href="#" class="follow-btn2">+FOLLOW</a>
+              </div>
+              <div class="mid-recommendations">
+                <div class="mid-recommendations-top">
+                  <img src="images/ng.jfif" />
+                  <div>
+                    <p>
+                      The Top Nigeria - An International Business, Politics and
+                      NGO Magazine and A Global Charity with Hub
+                    </p>
+                    <small
+                      >The Top Nigeria is part of The Top Person magazine and
+                      charity with a mission of empowering people and
+                      charities</small
+                    >
+                    <small
+                      >People who are in the financial Services industry also
+                      follow these pages</small
+                    >
+                  </div>
+                </div>
+                <a href="#" class="follow-btn2">+FOLLOW</a>
+              </div>
+              <div class="mid-recommendations">
+                <div class="mid-recommendations-top">
+                  <img src="images/brewries.jfif" />
+                  <div>
+                    <p>Nigerian Brewries Plc</p>
+                    <small
+                      >We are the pioneer and largest brewer in Nigeria. We are
+                      Nigerian Brewries. Welcome to our Linkedin page!</small
+                    >
+                    <small
+                      >People skilled in management also follow these
+                      pages</small
+                    >
+                  </div>
+                </div>
+                <a href="#" class="follow-btn2">+FOLLOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- ------------------------RIGHT SIDE BAR START----------------------- -->
       <div class="right-side-bar">
@@ -177,6 +498,20 @@
         }
         event.currentTarget.classList.add("activelink");
       }
+
+      // --------------------TEXTAREA-CONTROL-----------------------
+
+      let openTextArea = document.getElementById("openTextArea");
+      let closeBtn = document.querySelector(".closeBtn");
+
+      function openText() {
+        openTextArea.style.display = "block";
+        window.screen.display = "(opacity:0.5)";
+      }
+
+      closeBtn.addEventListener("click", function () {
+        openTextArea.style.display = "none";
+      });
     </script>
   </body>
 </html>

@@ -217,12 +217,12 @@ a {
 /* ------------------------LEFT SIDE BAR------------------------------- */
 .left-side-bar {
   flex-basis: 18%;
-  position: sticky;
-  top: 75px;
+  /* position: sticky;
+  top: 75px; */
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  align-self: flex-start;
-  overflow: hidden;
+  /* align-self: flex-start; */
+  /* overflow: hidden; */
 }
 
 .profile-pic {
@@ -346,6 +346,12 @@ a {
 
 .my-items:hover {
   background: var(--color-background-none-tint-hover);
+}
+
+.userlinks-frames {
+  position: sticky;
+  align-self: flex-start;
+  top: 80px;
 }
 .user-links {
   display: flex;
@@ -884,9 +890,9 @@ a {
   flex-basis: 25%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  position: sticky;
+  /* position: sticky;
   align-self: start;
-  top: 73px;
+  top: 73px; */
 }
 
 .feedAd {
@@ -988,4 +994,165 @@ a {
 
 .right-side-bar .hiring {
   border-radius: 10px;
+  position: sticky;
+  align-self: flex-start;
+  top: 80px;
+}
+
+.setting-userprofile-wrapper {
+  position: absolute;
+  top: 100%;
+  right: 20%;
+  overflow: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: max-height 0.5s;
+  max-height: 0;
+}
+
+.setting-userprofile-wrapper.finalHeight {
+  max-height: 500px;
+}
+
+.setting-frame {
+  padding: 20px 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.setting-wrapper {
+  width: 300px;
+  background: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.settings-name {
+  font-size: 16px;
+  color: #222;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.user-portfolio {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.user-portfolio img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.setting-frame a {
+  padding: 5px 95px;
+  width: 100%;
+  border: 2px solid #0a66c2;
+  border-radius: 18px;
+  margin-bottom: 10px;
+}
+
+.accounts {
+  padding: 20px 15px 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+
+.accounts h3 {
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 13px;
+}
+
+.accounts a {
+  display: block;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.accounts a img {
+  width: 15px;
+}
+
+.signout-btn {
+  padding: 5px 15px;
+  margin: 10px 0;
+  display: flex;
+  color: #777;
+}
+
+/* -------------------------PROFILE--------------------------- */
+
+.main-profile-frame {
+  flex-basis: 73%;
+}
+
+.user-detail {
+  width: 170px;
+  border-radius: 50%;
+  padding: 5px;
+  background: #fff;
+  margin-top: -120px;
+  margin-left: 50px;
+}
+
+.user-profile-cover {
+  background: #fff;
+  padding-bottom: 20px;
+}
+.user-profile-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 25px 10px;
+}
+
+.profile-section-btns {
+  padding: 0px 25px;
+}
+
+.profile-section-btns a {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-right: 8px;
+}
+
+.slider-cover {
+  width: 100%;
+  overflow: hidden;
+}
+.slider1 {
+  max-width: 500px;
+  max-height: 80px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.swiper-wrapper {
+  padding: 20px 25px;
+  width: 100%;
+}
+
+.swiper {
+  max-width: 1200px;
+}
+/* -----------------------RIGHT-SIDE-------------------- */
+.right-profile-frame2 {
+  flex-basis: 25%;
+  align-self: flex-start;
+  position: sticky;
+  top: 85px;
+}
+
+.add-profile {
+  padding: 20px 25px;
+  background: #fff;
+}
+
+.top-add {
+  border-bottom: 1px solid #ccc;
 }

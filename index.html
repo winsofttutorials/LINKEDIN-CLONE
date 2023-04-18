@@ -83,7 +83,11 @@
           </li>
         </ul>
         <div class="user-pic">
-          <img src="images/img-4.jfif" class="user-profile-pic" />
+          <img
+            src="images/img-4.jfif"
+            class="user-profile-pic"
+            onclick="settingsToggle()"
+          />
           <div>
             <p>Me</p>
             <img src="images/down-arrow.png" class="down-arrow" />
@@ -101,6 +105,34 @@
         </div>
 
         <a href="#" class="premium">Try premium for <br />free</a>
+      </div>
+
+      <div class="setting-userprofile-wrapper" id="settingsHeight">
+        <div class="setting-wrapper">
+          <div class="setting-frame">
+            <div class="user-portfolio">
+              <img src="images/img-4.jfif" />
+              <div>
+                <h2 class="settings-name">IFIDI W. EPHOD</h2>
+                <b>ICT</b>
+              </div>
+            </div>
+            <a href="#">View Profile</a>
+          </div>
+          <div class="accounts">
+            <h3>Account</h3>
+            <a href="#"><img src="images/premium.png" /> Try premium free</a>
+            <a href="#">Settings & Privacy</a>
+            <a href="#">Help</a>
+            <a href="#">Language</a>
+          </div>
+          <div class="accounts">
+            <h3>Manage</h3>
+            <a href="#">Posts & Activity</a>
+            <a href="#">Job Posting Account</a>
+          </div>
+          <a href="#" class="signout-btn">Sign Out</a>
+        </div>
       </div>
     </nav>
     <!-- ----------------------------END NAVIGATION BAR----------------------------- -->
@@ -132,15 +164,17 @@
           <a href="#"><img src="images/items.png" /> My items</a>
         </div>
 
-        <div class="user-links">
-          <div class="menu-links">
-            <a href="#">Groups</a>
-            <a href="#">Events</a>
-            <a href="#">Followed Hashtags</a>
+        <div class="userlinks-frames">
+          <div class="user-links">
+            <div class="menu-links">
+              <a href="#">Groups</a>
+              <a href="#">Events</a>
+              <a href="#">Followed Hashtags</a>
+            </div>
+            <b>+</b>
           </div>
-          <b>+</b>
+          <a href="#" class="discover">Discover more</a>
         </div>
-        <a href="#" class="discover">Discover more</a>
       </div>
       <!-- ---------------MAIN CONTENT START------------------------ -->
       <div class="main-content">
@@ -512,6 +546,14 @@
       closeBtn.addEventListener("click", function () {
         openTextArea.style.display = "none";
       });
+
+      // --------------------Settings-toggle-----------------------
+
+      let maximumHeight = document.getElementById("settingsHeight");
+
+      function settingsToggle() {
+        maximumHeight.classList.toggle("finalHeight");
+      }
     </script>
   </body>
 </html>

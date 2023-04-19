@@ -222,6 +222,7 @@ a {
   top: 75px; */
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+
   /* align-self: flex-start; */
   /* overflow: hidden; */
 }
@@ -670,6 +671,7 @@ a {
   border-bottom: 1px solid #ccc;
   margin-bottom: 10px;
   border-radius: 10px;
+  border: 1px solid #ccc;
 }
 
 .post {
@@ -1104,6 +1106,8 @@ a {
   color: #777;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  border: 1px solid #ccc;
+  border-top: 1px solid transparent;
 }
 .user-profile-details {
   display: flex;
@@ -1242,18 +1246,42 @@ a {
 .analytics-frame {
   background: #fff;
   border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
 }
 .analytics {
   padding: 20px 25px 0;
-  margin-top: 10px;
+
   color: #222;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.analytics-wrapper {
+  display: flex;
+}
+
+.analytics-wrapper .analytic-div {
+  margin-right: 60px;
+}
+
 .analytics h3 {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
+}
+
+.analytics h4 {
+  font-weight: 550;
+  color: #555;
+  font-family: "Poppins", sans-serif;
+}
+
+.analytics h4 b {
+  font-weight: 500;
+  padding: 5px 10px;
+  background: #ccc;
+  margin-left: 5px;
+  border-radius: 15px;
 }
 
 .analytics h3 ~ p {
@@ -1282,7 +1310,7 @@ a {
 
 .analytic-div .access-tools {
   width: 100%;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #777;
   padding-bottom: 15px;
 }
 
@@ -1290,8 +1318,12 @@ a {
   border-bottom: 1px solid transparent;
 }
 
+.analytics-wrapper .analytic-div .access-tools {
+  border-bottom: 0;
+}
+
 .show-more {
-  border: 1px solid #ccc;
+  border-top: 1px solid #ccc;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1321,8 +1353,82 @@ a {
 .add-profile {
   padding: 20px 25px;
   background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .top-add {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #eef3f8;
+  padding: 20px 0;
+  color: #777;
+}
+
+.top-add a {
+  color: #777;
+  font-weight: 500;
+}
+
+.top-add-2 {
+  padding: 20px 0 0;
+}
+
+.top-add-2 a {
+  color: #777;
+  max-width: 200px;
+  font-weight: 500;
+  display: flex;
+}
+
+.add-profile .add-site {
+  display: flex;
+  text-align: right;
+  float: right;
+  margin-bottom: 10px;
+  color: #999;
+  font-size: 12px;
+}
+
+.key-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.key-frame .user-profile-pix {
+  width: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.key-frame img {
+  width: 70px;
+}
+
+.add-profile .learning {
+  text-align: center;
+}
+
+.add-profile .unluck-btn {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 150px;
+  margin: 20px auto 0;
+  color: #0a66c2;
+  font-weight: 500;
+  border: 1px solid #0a66c2;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+.add-profile .viewrecommend {
+  border-top: 1px solid #ccc;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
 }

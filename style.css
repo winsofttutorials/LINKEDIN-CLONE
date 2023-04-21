@@ -1342,6 +1342,43 @@ a {
   margin-left: 5px;
   margin-top: 3px;
 }
+
+.about-me {
+  padding: 20px 25px;
+}
+
+.about-me .top-class-frame {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.top-class-frame h3 {
+  font-size: 16px;
+}
+
+.about-me p {
+  font-size: 17px;
+}
+
+.about-me .moreaccess {
+  border-bottom: 1px solid #ccc;
+}
+
+.user-article {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.user-article img {
+  margin-top: 5px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.user-article div p {
+  font-size: 14px;
+}
 /* -----------------------RIGHT-SIDE-------------------- */
 .right-profile-frame2 {
   flex-basis: 25%;
